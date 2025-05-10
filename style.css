@@ -16,7 +16,7 @@
     }
     
     .topo {
-        background-image: url("image/fundo/WhatsApp\ Image\ 2025-05-05\ at\ 15.37.13.jpeg");
+        background-image: url("image/fundo/Desig.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -94,5 +94,5 @@
     #inicio h1 {
         font-family: "horizon";
         font-size: clamp(40px, 9vw, 72px);
-        color: #ed0a24;
+        color: #e63946;
     }
