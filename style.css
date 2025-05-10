@@ -93,6 +93,6 @@
     
     #inicio h1 {
         font-family: "horizon";
-        font-size: 4.5em;
+        font-size: clamp(40px, 9vw, 72px);
         color: #ed0a24;
     }
