@@ -101,6 +101,6 @@
             @media screen and (orientation: landscape) {
                 #inicio h1 {
                     justify-content: flex-start;
-                    margin-bottom: 200px;
+                    margin-bottom: 250px;
                 }
             }
