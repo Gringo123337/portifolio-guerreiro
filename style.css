@@ -96,3 +96,9 @@
                 word-wrap: break-word;
                 max-width: 100%;
             }
+            
+            @media screen and (orientation: landscape) {
+                .seu-container {
+                    justify-content: flex-start;
+                }
+            }
