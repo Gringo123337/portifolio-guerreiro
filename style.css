@@ -85,6 +85,7 @@
                 align-items: center;
                 height: 320px;
                 overflow-wrap: break-word;
+                width: 100%;
             }
             
             #inicio h1 {
@@ -94,11 +95,12 @@
                 text-align: center;
                 text-shadow: 0 0 10px #ff0000;
                 word-wrap: break-word;
-                max-width: 100%;
+                position: relative;
             }
             
             @media screen and (orientation: landscape) {
-                .seu-container {
+                #inicio h1 {
                     justify-content: flex-start;
+                    margin-bottom: 200px;
                 }
             }
