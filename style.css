@@ -1,98 +1,96 @@
-    @charset "UTF-8";
-    @font-face {
-        font-family: "horizon";
-        src: url("font/horizon/Horizon.otf");
-    }
-    
-    * {
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-    }
-    
-    body {
-        background-color: #252425;
-        overflow-x: hidden;
-    }
-    
-    .topo {
-        background-image: url("image/fundo/Desig.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 90vh;
-    }
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #25242538;
-        flex-wrap: wrap;
-        padding-right: 60px;
-        transition-duration: 1s;
-        position: sticky;
-        margin-bottom: 150px;
-    }
-    
-    .logo>img {
-        height: 90px;
-    }
-    
-    .sub-contato {
-        margin-right: 350px;
-        display: flex;
-    }
-    
-    .sub-contato img {
-        width: 50px;
-        padding: 8px;
-    }
-    
-    .navegador {
-        border-bottom: 3px solid #ed0a24;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-    
-    .navegador a {
-        color: #e0e0e0;
-        text-decoration: none;
-        padding: 15px;
-        font-weight: bolder;
-        font-size: 1.5em;
-        display: inline-block;
-    }
-    
-    .navegador a:hover {
-        text-decoration: 5px underline red;
-    }
-    
-    .navegador::-webkit-scrollbar {
-        background-color: #ed0a24;
-    }
-    
-    #inicio {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .titulo {
-        color: #e0e0e0;
-        padding: 0px;
-    }
-    
-    #inicio h2 {
-        font-family: sans-serif;
-        font-size: 2em;
-        color: #e0e0e0;
-    }
-    
-    #inicio h1 {
-        font-family: "horizon";
-        font-size: clamp(40px, 9vw, 72px);
-        color: #e63946;
-    }
+        @charset "UTF-8";
+        @font-face {
+            font-family: "guerra";
+            src: url("font/horizon/Guerra_Santa.ttf");
+        }
+        
+         :root {
+            --cor1: #A2A644;
+            --cor2: #8C5D04;
+            --cor3: #734002;
+            --cor4: #402a0160;
+            --cor5: #0C0D06;
+            --font1: "guerra";
+            --font2: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #252425;
+        }
+        
+        .navegador::-webkit-scrollbar {
+            background-color: var(--cor4);
+        }
+        
+        .topo {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("image/fundo/Desig.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 70vh;
+            background-image:
+        }
+        
+        header {
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--cor4);
+            padding: 10px 20px;
+            flex-wrap: wrap-reverse;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo h2 {
+            text-align: center;
+            color: #ed0a24;
+            font-size: 2em;
+            font-family: var(--font2);
+            text-shadow: 0 0 10px;
+        }
+        
+        .sub-contato img {
+            height: 20px;
+            margin: 10px;
+        }
+        
+        .navegador {
+            overflow-x: auto;
+            white-space: nowrap;
+            border-bottom: 5px solid #ed0a24;
+            height: 38px;
+        }
+        
+        .navegador a {
+            margin: 22px;
+            text-decoration: none;
+            color: #e0e0e0;
+            font-family: var(--font2);
+            font-weight: bolder;
+        }
+        
+        #inicio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 320px;
+        }
+        
+        #inicio h1 {
+            font-family: var(--font1);
+            color: var(--cor1);
+            font-size: clamp(3em, 5vw, 5em);
+            text-align: center;
+            text-shadow: 0 0 10px #ff0000;
+        }
