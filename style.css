@@ -4,6 +4,11 @@
                 src: url("font/horizon/Guerra_Santa.ttf");
             }
             
+            @font-face {
+                font-family: "Orbitron";
+                src: url("font/static/Orbitron-Bold.ttf");
+            }
+            
              :root {
                 --cor1: #A2A644;
                 --cor2: #8C5D04;
@@ -11,7 +16,7 @@
                 --cor4: #402a0160;
                 --cor5: #0C0D06;
                 --font1: "guerra";
-                --font2: Arial, Helvetica, sans-serif;
+                --font2: "Orbitron", sans-serif;
             }
             
             * {
@@ -33,7 +38,7 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-                height: 100vh;
+                height: 65vh;
             }
             
             header {
@@ -55,8 +60,9 @@
                 text-align: center;
                 color: #ed0a24;
                 font-size: 2em;
-                font-family: var(--font2);
-                text-shadow: 0 0 10px;
+                font-family: "Orbitron", sans-serif;
+                letter-spacing: 2px;
+                font-weight: bold;
             }
             
             .sub-contato img {
@@ -83,7 +89,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 40%;
+                height: 50%;
                 text-align: center;
             }
             
