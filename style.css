@@ -47,8 +47,9 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--cor4);
-    padding: 10px px;
+    padding: 0px 5px;
     flex-wrap: wrap-reverse;
+    height: 145px;
 }
 
 .logo {
@@ -65,7 +66,7 @@ header {
 }
 
 .logo:hover {
-    filter: drop-shadow(0 0 6px black);
+    filter: drop-shadow(0 0 10px black);
 }
 
 .sub-contato img {
