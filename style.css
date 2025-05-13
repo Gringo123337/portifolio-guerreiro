@@ -1,100 +1,134 @@
-            @charset "UTF-8";
-            @font-face {
-                font-family: "guerra";
-                src: url("font/horizon/Guerra_Santa.ttf");
-            }
-            
-            @font-face {
-                font-family: "Orbitron";
-                src: url("font/static/Orbitron-Bold.ttf");
-            }
-            
-             :root {
-                --cor1: #A2A644;
-                --cor2: #8C5D04;
-                --cor3: #734002;
-                --cor4: #402a0160;
-                --cor5: #0C0D06;
-                --font1: "guerra";
-                --font2: "Orbitron", sans-serif;
-            }
-            
-            * {
-                padding: 0px;
-                margin: 0px;
-                box-sizing: border-box;
-            }
-            
-            body {
-                background-color: #252425;
-            }
-            
-            .navegador::-webkit-scrollbar {
-                background-color: var(--cor4);
-            }
-            
-            .topo {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("image/fundo/Desig.jpg");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                height: 70vh;
-            }
-            
-            header {
-                display: flex;
-                justify-content: center;
-                justify-content: space-between;
-                align-items: center;
-                background-color: var(--cor4);
-                padding: 10px 2px;
-                flex-wrap: wrap-reverse;
-            }
-            
-            .logo {
-                display: flex;
-                align-items: center;
-            }
-            
-            .logo h2 {
-                text-align: center;
-                color: #ed0a24;
-                font-size: clamp(1em, 5vw, 3em);
-                font-family: "Orbitron", sans-serif;
-                font-weight: bold;
-            }
-            
-            .sub-contato img {
-                height: 30px;
-                margin: 10px;
-            }
-            
-            .navegador {
-                overflow-x: auto;
-                white-space: nowrap;
-                border-bottom: 5px solid #ed0a24;
-                height: 40px;
-            }
-            
-            .navegador a {
-                margin: 22px;
-                text-decoration: none;
-                color: #e0e0e0;
-                font-family: var(--font2);
-                font-weight: bolder;
-            }
-            
-            #inicio {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 40%;
-                text-align: center;
-            }
-            
-            #inicio h1 {
-                font-family: var(--font1);
-                color: var(--cor1);
-                font-size: clamp(3em, 5vw, 5em);
-                text-shadow: 0 0 10px;
-            }
+@charset "UTF-8";
+@font-face {
+    font-family: "guerra";
+    src: url("font/horizon/Guerra_Santa.ttf");
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("font/static/Orbitron-Bold.ttf");
+}
+
+ :root {
+    --cor1: #A2A644;
+    --cor2: #8C5D04;
+    --cor3: #734002;
+    --cor4: #402a0160;
+    --cor5: #0C0D06;
+    --font1: "guerra";
+    --font2: "Orbitron", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252425;
+}
+
+.navegador::-webkit-scrollbar {
+    background-color: var(--cor4);
+}
+
+.topo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("image/fundo/Desig.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor4);
+    padding: 10px 2px;
+    flex-wrap: wrap-reverse;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    text-align: center;
+    color: #ed0a24;
+    font-size: clamp(1em, 5vw, 3em);
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 6px black);
+}
+
+.sub-contato img {
+    height: 30px;
+    margin: 10px;
+    transition: transform 0.3s, filter 0.3s;
+    cursor: pointer;
+}
+
+.sub-contato img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px #ff004f);
+}
+
+.navegador {
+    overflow-x: auto;
+    white-space: nowrap;
+    border-bottom: 5px solid #ed0a24;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.navegador a {
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-family: var(--font2);
+    font-weight: 900;
+    position: relative;
+    transition-duration: 1s;
+    padding: 20px;
+}
+
+.navegador a:hover {
+    background-color: #ed0a24;
+    border-radius: 10px;
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    text-align: center;
+}
+
+#inicio h1 {
+    font-family: var(--font1);
+    color: var(--cor1);
+    font-size: clamp(2.5em, 8vw, 7em);
+    text-shadow: 0 0 10px;
+    animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
